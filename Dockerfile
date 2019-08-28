@@ -1,5 +1,5 @@
 # Based on debian
-FROM debian:stable
+FROM debian:latest
 
 # Install open-ssh server
 RUN apt-get update && \
