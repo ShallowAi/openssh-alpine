@@ -1,5 +1,5 @@
-# Based on alpine
-FROM alpine
+# Based on debian
+FROM debian:stable-slim
 
 # Install open-ssh server
 RUN apk add --no-cache openssh-server openssh
