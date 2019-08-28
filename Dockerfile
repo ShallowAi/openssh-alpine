@@ -1,5 +1,5 @@
 # Based on debian
-FROM debian:stable-slim
+FROM debian:stable
 
 # Install open-ssh server
 RUN apt-get update && \
