@@ -8,7 +8,7 @@ RUN apt-get update && \
       apt-get clean
 
 # Enable root login
-RUN echo "" >> /etc/ssh/sshd_config && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+RUN echo "" >> /etc/ssh/sshd_config && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && echo "UsePAM yes" >> /etc/ssh/sshd_config
 
 # Environment variable, used to setup user password and port
 ENV SSH_USER root
