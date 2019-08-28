@@ -2,7 +2,7 @@
 FROM debian:stable-slim
 
 # Install open-ssh server
-RUN apk add --no-cache openssh-server openssh
+RUN apt-get install --no-cache openssh-server
 
 # Enable root login
 RUN echo "" >> /etc/ssh/sshd_config && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
